@@ -1,8 +1,11 @@
 const express = require('express');
 const app = express();
 const User = require('./db/db.js');
+const routes = require('./router');
 
 app.use(express.json());
+
+
 
 app.get('/details', async (req, res) => {
     try {
